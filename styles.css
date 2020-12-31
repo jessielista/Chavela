@@ -1,0 +1,82 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+body {
+  background: linear-gradient(45deg, rgba(205,235,142,1) 14%,rgba(165,190,0,1) 67%);
+  /* background: #A5BE00; */
+  font-family: "Catamaran", sans-serif; 
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  display: block; /* Look up with this does again */
+}
+
+#main {
+  /* background: #adacb5; */
+  background: #bdbbc3;
+  margin: 50px 35px; /* top and bottom margins are 50px, right and left margins are 35px */
+  border-radius: 15px;
+  padding: 30px;   
+}
+#title {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+img {
+  width: 80%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-style: solid;
+}
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 3.25rem;
+}
+h3 {
+font-size: 1.7rem;
+font-style: italic;
+}
+h4 {
+  font-size: 2rem;
+}
+a {
+  color: #477ca7;
+}
+a:visited {
+  color: #74638f;
+}
+ul {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+li {
+  margin: 16px 0;
+}
+
+
+a {
+  color: #477ca7;
+}
+a:visited {
+  color: #74638f;
+}
