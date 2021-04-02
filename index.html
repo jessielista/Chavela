@@ -3,39 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Chavela Vargas</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Chavela</title>
+  <!-- styles css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon-chavela.ico" type="image/x-icon">
 </head>
+
 <body>
-  <main id="main">
+  
+      
+  <!-- header  -->
+  <header class="header">
     <h1 id="title">Chavela Vargas</h1>
-    <p>Iconic Costa Rican-born Mexican singer of mostly love and heartbreak.</p>
-    <figure id="img-div">
-      <img id ="image" src="https://i.imgur.com/tXWpiiK.jpg" title="source: imgur.com" alt="Picture of Chavela in her youth, with a guitar."/></a>
-    <!-- <img id ="image" src="./young_chavela.jpg" alt="Picture of Chavela in her youth, with a guitar."> -->
-    <figcaption id="img-caption"> Chavela Vargas, who revolutionized ranchera music, sits with her guitar.</figcaption>
-    </figure>
-  </main>
-  <section id="tribute-info">
-    <h2>Here's a time line of Chavela's life:</h2>
-      <ul>
-        <li><strong>1919</strong> - Born in Costa Rica, San Joaquín de Flores.</li>
-        <li><strong>1936</strong> - Left Costa Rica for Mexico at age 17 to expand her opportunities for a musical career.</li>
-        <li><strong>1950s</strong> - She became known within artistic circles, due in part to her performances in Acapulco, center of international tourism,
-        where she sang at the Champagne Room of the restaurant La Perla</li>
-        <li><strong>1961</strong> - Vargas released Noche Bohemia (“Bohemian Night”), the first of more than 80 recordings.</li>
-        <li><strong>1970s</strong> - She struggled with alcohol problems, however, and vanished from the stage.</li>
-        <li><strong>1990s</strong> - Launched a remarkable international comeback, championed by Spanish filmmaker Pedro Almodóvar.</li>
-        <li><strong>2012</strong> - Died in Cuernavaca, Mexico. </li>
+  
+    <!-- sidebar -->
+  <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
+  </button>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button  class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+    <div class="banner">
+      <!-- <h1 id="title">Chavela Vargas</h1> -->
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html">about</a>
+        </li>
+        <li>
+          <a href="projects.html">projects</a>
+        </li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
       </ul>
-      <h3>
-        <p>"Nadie se muere de amor, ni por falta, ni por sobra." --Chavela</p>
-        <p>English translation: "No one dies of love, neither for lack, nor for excess."</p>
-      </h3>
-      <h4>If you have time, you should read more about this incredible human being on her <a id="tribute-link" href="https://en.wikipedia.org/wiki/Chavela_Vargas" target="_blank">Wikipedia Page</a>
-        .</h4>
+    </div>
+    </aside>
+  </header>
+<div>
+  <!-- quote section -->
+  <div class="quote">
+    <div class="quote-resize">
+    <h5 id="author">"Voy a gritar con toda mi alma para que el mundo sepa que estoy viva. Viva de tanto vivir. Viva de tanto amar."</h5>
+    </div>
+    <button class="btn btn-hero" id="btn">click me</button>
+  </div>
+
+  <div >
+    <img class="chavela-img" src="/young_chavela.jpg" alt="Young Chavela Vargas"> 
+  </div>
+</div>  
+<!-- start of timeline  -->
+<section id="tribute-info">
+    <h3>Timeline of Chavela's life:</h3>
+      <ul class="timeline-ul">
+        <li><span class='bold'>1919</span> - Born in Costa Rica, San Joaquín de Flores.</li>
+        <li><span class='bold'>1936</span> - Left Costa Rica for Mexico at age 17 to expand her opportunities for a musical career.</li>
+        <li><span class='bold'>1950s</span> - She became known within artistic circles, due in part to her performances in Acapulco, center of international tourism,
+        where she sang at the Champagne Room of the restaurant La Perla</li>
+        <li><span class='bold'>1961</span> - Vargas released Noche Bohemia (“Bohemian Night”), the first of more than 80 recordings.</li>
+        <li><span class='bold'>1970s</span> - She struggled with alcohol problems, however, and vanished from the stage.</li>
+        <li><span class='bold'>1990s</span> - Launched a remarkable international comeback, championed by Spanish filmmaker Pedro Almodóvar.</li>
+        <li><span class='bold'>2012</span> - Died in Cuernavaca, Mexico. </li>
+      </ul>
+    <h5>If you have time, you should read more about this incredible human being on her <a id="tribute-link"
+    href="https://en.wikipedia.org/wiki/Chavela_Vargas" target="_blank">Wikipedia Page</a>.
+    </h5> 
   </section>
+  <!-- javascript -->
+  <script src="app.js"></script>
+
 </body>
 </html>
-

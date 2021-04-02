@@ -4,74 +4,205 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 
 /*
 =============== 
 Variables
 ===============
 */
-
-body {
-  background: linear-gradient(45deg, rgba(205,235,142,1) 14%,rgba(165,190,0,1) 67%);
-  /* background: #A5BE00; */
-  font-family: "Catamaran", sans-serif; 
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
-  color: #333;
-  margin: 0;
-  display: block; /* Look up with this does again */
+body{
+  font-family: "Catamaran", sans-serif;
+  background-color: #778b3b;
+  margin: auto;
+  padding: auto;
+  position: relative;
 }
 
-#main {
-  /* background: #adacb5; */
-  background: #bdbbc3;
-  margin: 50px 35px; /* top and bottom margins are 50px, right and left margins are 35px */
-  border-radius: 15px;
-  padding: 30px;   
+h1,
+h2,
+h3,
+h4 {
+  /* letter-spacing: var(--spacing); */
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
 }
-#title {
-  background: black;
-  color: white;
-  border-radius: 15px;
-}
-img {
-  width: 80%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  border-style: solid;
-}
+
 h1 {
   font-size: 5rem;
-  margin-bottom: 0;
+  letter-spacing: 10px;
+  color: #f6b528;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-h2 {
-  font-size: 3.25rem;
-}
+
 h3 {
-font-size: 1.7rem;
-font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  text-decoration:underline;
+  text-underline-offset: 0.3em;
 }
-h4 {
-  font-size: 2rem;
+h5 {
+  /* background-color: #000; */
+  /* content: ""; */
+  display: inline-block;
+  /* height: 3px; */
+  position: relative;
+  /* vertical-align:text-bottom; */
+  width: 70%;
+  /* text-decoration: overline underline; */
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
-a {
-  color: #477ca7;
+p {
+font-size: 1.5rem;
 }
-a:visited {
-  color: #74638f;
+
+
+/*
+=============== 
+Header
+===============
+*/
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("./cactus-red.jpg") center/cover no-repeat fixed; 
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+  /* research what position:relative does and what overflow-x: hidden also does */
+
 }
-ul {
-  max-width: 1000px;
+#title {
+  text-align: center; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.banner {
+  text-align: center; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/*
+=============== 
+Chavela Image & Container 
+===============
+*/
+
+
+
+/* .container {
+  border: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: blue;
+  display: flex;
+} */
+
+.quote {
+  background-color: rgba(246, 181, 40, 0.79);
+  text-align: center;
+  width: auto;
+  height: 490px;
+  /* i can delete container, b/c i decided not to use flexbox for this section */
+}
+/* .box-2 {
+  flex-grow: 1;
+  background-color: rgba(246, 181, 40, 0.79);
+  text-align: center;
+  float: right;
+} */
+
+.quote-resize {
+  font-size: 3rem;
+  padding: 20px 20px;
+  font-family: 'Yellowtail', cursive;
+  /* text-decoration: underline;
+  text-decoration: overline; */
+  color: black;
+  
+}
+
+
+
+.btn-hero {
+  display: inline-block;
+  padding:1rem 1rem;
+  margin:1rem;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1; 
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.chavela-img {
+  padding-top: 40px;
+  /* padding-top is making the img egg shapes, changing it
+  to padding:10px; will make it perfectly round. */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 30%;
+  
+}
+
+.chavela-old-img {
+/* padding: 40px; */
+  margin: 10px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  
+}
+
+/* =================== old start of timeline styling ================================= */
+
+.timeline-ul {
+  /* max-width: 1000px; DONT need this b/c we have @media for li */
   margin: 0 auto 50px auto;
-  text-align: left;
+  text-align: center;
+  display: block;
   line-height: 1.6;
-  font-size: 2rem;
+  list-style-type: none;
+  /* font-size: 2rem; */
 }
+
 li {
   margin: 16px 0;
 }
+@media (min-width: 460px) {
+  li {
+    font-size: 1.5rem;
+    /* line-height: 1.2; */
+  }
+}
+
+.bold {
+font-weight: bold
+}
+
 
 
 a {
@@ -80,3 +211,100 @@ a {
 a:visited {
   color: #74638f;
 }
+a:hover {
+  color: #f1f1f1;
+}
+
+/* ================ SIDEBAR ========= */
+
+/* the sidebar icon button */
+.sidebar-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: black;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+.sidebar-toggle:hover {
+  color: red;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar-header {
+  display: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.close-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  color: red;
+  transition: all 0.3s linear;;
+  cursor: pointer;
+  color: blue;
+} */
+.close-btn:hover {
+  color: red;
+  transform: rotate(360deg);
+}
+
+.links {
+  text-decoration-color: black;
+}
+.links a {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: grey;
+  transition: all 0.3s linear;;
+}
+/* .links a:hover {
+  background: orange;
+  color: var(--clr-primary-5);
+  padding-left: 1.75rem;
+} */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black; 
+
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr auto; */
+  /* row-gap: 1rem; */
+
+
+  box-shadow: yellow;
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+/* @media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
+  }
+} */
